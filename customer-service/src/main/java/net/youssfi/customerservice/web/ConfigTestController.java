@@ -20,8 +20,9 @@ public class ConfigTestController {
     private int x;
     @Value("${customer.params.y}")
     private int y;
-    @Autowired
-    private GlobalConfig globalConfig;
+
+ @Autowired
+  private GlobalConfig globalConfig;
 
     @GetMapping("/testConfig")
     public Map<String, Integer> configTest(){
